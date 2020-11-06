@@ -30,22 +30,24 @@
         android:ems="10"
         android:gravity="start|top"
         android:inputType="textMultiLine"
+        android:onClick="C"
+        android:text="@string/accueil_text"
         app:layout_constraintBottom_toTopOf="@+id/btn_myservices"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/img_accueil"
-        android:text="@string/accueil_text" />
+        app:layout_constraintTop_toBottomOf="@+id/img_accueil" />
 
     <Button
         android:id="@+id/btn_myservices"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="125dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="12dp"
         android:layout_marginEnd="144dp"
+        android:onClick="onClickMyServices"
         android:text="@string/btn_myservice"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_accueil" />
 
@@ -58,7 +60,7 @@
         android:layout_marginEnd="144dp"
         android:text="@string/btn_mydemand"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_myservices" />
 
@@ -67,11 +69,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="92dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="122dp"
         android:text="@string/btn_findservice"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button2" />
 
