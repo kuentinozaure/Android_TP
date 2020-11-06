@@ -8,75 +8,84 @@
 
     <ImageView
         android:id="@+id/img_accueil"
-        android:layout_width="364dp"
-        android:layout_height="103dp"
+        android:layout_width="325dp"
+        android:layout_height="118dp"
         android:layout_marginStart="23dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="96dp"
         android:layout_marginEnd="24dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+        tools:src="@drawable/logo"
+        app:srcCompat="@drawable/logo"/>
 
     <EditText
         android:id="@+id/txt_accueil"
         android:layout_width="277dp"
         android:layout_height="68dp"
-        android:layout_marginStart="87dp"
-        android:layout_marginTop="44dp"
-        android:layout_marginEnd="114dp"
+        android:layout_marginStart="67dp"
+        android:layout_marginEnd="67dp"
+        android:layout_marginBottom="87dp"
         android:ems="10"
         android:gravity="start|top"
         android:inputType="textMultiLine"
+        app:layout_constraintBottom_toTopOf="@+id/btn_myservices"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.823"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/img_accueil"
-        tools:text="@string/accueil_text" />
+        android:text="@string/accueil_text" />
 
     <Button
         android:id="@+id/btn_myservices"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="144dp"
         android:text="@string/btn_myservice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_accueil" />
-
-    <Button
-        android:id="@+id/btn_proposeservice"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="44dp"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="103dp"
-        android:text="@string/btn_proposeservice"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.278"
-        app:layout_constraintStart_toEndOf="@+id/btn_findservice"
-        app:layout_constraintTop_toBottomOf="@+id/button2" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="69dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginStart="114dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="144dp"
         android:text="@string/btn_mydemand"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.602"
-        app:layout_constraintStart_toEndOf="@+id/btn_myservices"
-        app:layout_constraintTop_toBottomOf="@+id/txt_accueil" />
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_myservices" />
 
     <Button
         android:id="@+id/btn_findservice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="122dp"
         android:text="@string/btn_findservice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_myservices" />
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+    <Button
+        android:id="@+id/btn_proposeservice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="112dp"
+        android:text="@string/btn_proposeservice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_findservice" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
