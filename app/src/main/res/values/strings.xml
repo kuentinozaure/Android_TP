@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">MainActivity</string>
+    <string name="accueil_text">Bienvenue sur votre application de partage de ressources</string>
+    <string name="btn_myservice">Mes services</string>
+    <string name="btn_mydemand">Mes demandes</string>
+    <string name="btn_findservice">Trouver un service</string>
+    <string name="btn_proposeservice">Proposer un service</string>
 </resources>
